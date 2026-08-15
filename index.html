@@ -16,9 +16,10 @@
      short link: wa.me/message/45DHW7AVAJYWL1 (was wa.me/525670071559, her personal
      number). The short link routes to the Magara business account, +52 55 4944 7669.
      If it ever breaks, she can regenerate it in WhatsApp Business > Short link.
-  2. PHOTO — search "PHOTO GOES HERE". Drop a square jpg next to this file as mar.jpg and
-     swap the commented <img> in for the monogram. Works fine without one.
-     Use a photo of HER FACE, not a logo and not her work — see note below.
+  2. PHOTO — DONE 2026-08-15. She sent her Magara logo and asked for that instead of a
+     photo of her, so the monogram is gone and magara-logo.jpg is in. Shown whole, not
+     circle-cropped: the wordmark, the border and the pyramids are half the artwork.
+     The "Magara Nahualli" eyebrow came out with it — the logo already says MAGARA.
   3. Check the two Instagram handles and the TripAdvisor URL are still right.
   =======================================================
 -->
@@ -47,13 +48,13 @@
   }
   .card{position:relative; z-index:1; width:100%; max-width:400px; text-align:center}
 
+  /* her logo, shown whole as a plate rather than cropped into a circle:
+     the wordmark and the border are half of the artwork and a round crop loses both */
   .avatar{
-    width:104px; height:104px; margin:0 auto 22px; border-radius:50%;
-    border:1px solid var(--line); background:var(--panel);
-    display:grid; place-items:center; overflow:hidden;
+    width:100%; max-width:230px; margin:0 auto 24px; border-radius:4px;
+    border:1px solid #2f333a; background:var(--panel); overflow:hidden;
   }
-  .avatar img{width:100%; height:100%; object-fit:cover; display:block}
-  .avatar .mono-mark{font-family:var(--serif); font-size:40px; color:var(--accent); letter-spacing:.02em}
+  .avatar img{width:100%; height:auto; display:block}
 
   .eyebrow{
     font-family:var(--mono); font-size:10px; letter-spacing:.24em; text-transform:uppercase;
@@ -98,12 +99,9 @@
   <main class="card">
 
     <div class="avatar">
-      <!-- PHOTO GOES HERE — drop mar.jpg beside this file, then swap the line below for:
-           <img src="mar.jpg" alt="Mar">                                            -->
-      <span class="mono-mark">M</span>
+      <img src="magara-logo.jpg" alt="Magara Nahualli">
     </div>
 
-    <p class="eyebrow">Magara Nahualli</p>
     <h1>Mar</h1>
     <p class="tagline">Tatuaje fine line y dotwork · Talleres, eventos y ceremonias · Ciudad de México</p>
 
