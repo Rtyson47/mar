@@ -33,8 +33,8 @@
      The "Magara Nahualli" eyebrow came out with it — the logo already says MAGARA.
   3. Check the two Instagram handles and the TripAdvisor URL are still right.
   4. COUNTING (added 2026-11-02, T-335). GoatCounter, cookieless, no banner needed.
-     Before deploying: Rich signs up at goatcounter.com and swaps GOATCOUNTER-CODE at the
-     bottom of the page for his site code. Only deploy once Mar has said she's fine with it.
+     Rich's GoatCounter site code is "richtyson" (signed up 2026-11-02, hello@richtyson.co.uk); it's
+     already in the script at the bottom. Uncomment it only once Mar has said she's fine with it.
      Each button carries data-goatcounter-click, so the dashboard shows taps per button;
      "wa-citas" (WhatsApp) is the one that's closest to an enquiry.
      If the card moves to her own domain, update og:url / og:image; the count carries on.
@@ -79,6 +79,8 @@
   }
   h1{font-size:44px; line-height:1; font-weight:500; margin:0 0 14px; letter-spacing:-.01em}
   .tagline{color:var(--soft); font-size:15.5px; line-height:1.55; margin:0 auto; max-width:31ch}
+  .lang{font-family:var(--mono); font-size:10.5px; letter-spacing:.14em; text-transform:uppercase;
+        color:var(--accent); margin:12px 0 0}
 
   .rule{
     height:5px; margin:26px auto 24px; max-width:170px; color:var(--line);
@@ -121,6 +123,7 @@
 
     <h1>Mar</h1>
     <p class="tagline">Tatuaje fine line y dotwork · Talleres, eventos y ceremonias · Ciudad de México</p>
+    <p class="lang">Sessions in English too</p>
 
     <div class="rule" role="presentation"></div>
 
@@ -129,6 +132,17 @@
       <a class="btn primary" href="https://wa.me/message/45DHW7AVAJYWL1" data-goatcounter-click="wa-citas">
         <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.23 8.23 0 0 1 0 16.47Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.47c-.16 0-.43.06-.65.31-.22.24-.86.84-.86 2.05s.88 2.38 1 2.54c.13.17 1.73 2.64 4.2 3.7.59.26 1.04.41 1.4.52.59.19 1.12.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.16-.47-.28Z"/></svg></span>
         <span class="txt"><b>Escríbeme por WhatsApp</b><span>Citas y cotizaciones</span></span>
+      </a>
+
+      <!-- her two locations (she sent both 2026-11-04): the studio is for private sessions, the hostel for flash and parties -->
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Medell%C3%ADn+340%2C+Roma+Sur%2C+06760+Ciudad+de+M%C3%A9xico" data-goatcounter-click="mapa-estudio">
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></svg></span>
+        <span class="txt"><b>Estudio · Roma Sur</b><span>Medellín 340 · Sesiones privadas</span></span>
+      </a>
+
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Apapacho+Hostel%2C+Ciudad+de+M%C3%A9xico" data-goatcounter-click="mapa-hostel">
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></svg></span>
+        <span class="txt"><b>Apapacho Hostel</b><span>Flash · Tragos · Fiestas</span></span>
       </a>
 
       <a class="btn" href="https://instagram.com/tattoo_magara" data-goatcounter-click="ig-tattoo-magara">
@@ -148,11 +162,10 @@
 
     </nav>
 
-    <footer>Ciudad de México</footer>
+    <footer>Roma Sur · Ciudad de México</footer>
   </main>
-  <!-- visit and tap counting, OFF until Mar says yes (T-335): swap GOATCOUNTER-CODE for the real site code, then uncomment
-  <script data-goatcounter="https://GOATCOUNTER-CODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  -->
+  <!-- visit and tap counting (T-335): Mar said yes 2026-11-04. Site code richtyson (Rich signed up 2026-11-02) -->
+  <script data-goatcounter="https://richtyson.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
 </body>
 </html>
